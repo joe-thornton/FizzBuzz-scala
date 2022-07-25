@@ -4,7 +4,10 @@ object FizzBuzz {
       val stringArray = intArray.map { x =>
         if (x % 3 == 0) {
           "Fizz"
-        } else x
+        } else if (x % 5 == 0) {
+          "Buzz"
+        }
+        else x
       }
       stringArray.mkString(", ")
   }
